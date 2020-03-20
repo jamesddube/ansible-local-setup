@@ -12,8 +12,9 @@ sudo pip install --upgrade ansible
 echo -e "${BGreen}done ${NC}"
 
 echo -e "${BYellow}Cloning playbook repository ${NC}"
-git clone git@github.com:jamesddube/ansible-local-setup.git ~/ansible-local-setup
-cd ~/ansible-local-setup
+# git clone git@github.com:jamesddube/ansible-local-setup.git ~/ansible-local-setup
+# cd ~/ansible-local-setup
 echo -e "${BYellow}Let the games begin... ${NC}"
-git checkout -b development
-ansible-playbook playbooks/setup.yml -i ./hosts
+git checkout development
+ls -l
+ansible-playbook playbooks/setup.yml -i ./hosts.yml
